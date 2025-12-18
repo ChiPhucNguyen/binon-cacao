@@ -1,0 +1,26 @@
+.cmn-marquee {
+    font-size: 0;
+    letter-spacing: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    opacity: 0;
+    -webkit-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+    -ms-transition: opacity 0.3s;
+    -o-transition: opacity 0.3s;
+    transition: opacity 0.3s
+}
+
+.cmn-marquee.loaded {
+    opacity: 1
+}
+
+.cmn-marquee__frame .item {
+    display: inline-block;
+    vertical-align: top
+}
+
+.cmn-marquee__frame .item img {
+    display: block;
+    max-width: unset
+}
